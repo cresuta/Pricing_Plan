@@ -17,6 +17,23 @@ h2 {
     text-transform: uppercase;
 }
 
+button {
+    width: 120px;
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: none;
+    border: 1px solid #274c77;
+    border-radius: 15px;
+    color: #274c77;
+    padding: 8px 13px;
+    cursor: pointer;
+}
+
+button:hover, button:focus {
+    background-color: #274c77;
+    color: #e7ecef;
+}
+
 .plan {
     background-color: #e7ecef;
     border-radius: 15px;
