@@ -1,4 +1,5 @@
 html {
+    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     color: #8b8c89;
 }
@@ -6,6 +7,10 @@ html {
 body {
     background-color: #6096ba;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 img {
@@ -42,6 +47,8 @@ button:hover, button:focus {
     justify-content: space-between;
     align-items: center;
     padding: 15px 25px;
+    width: 100%;
+    max-width: 700px;
 }
 
 .pricing_plan {
@@ -60,3 +67,20 @@ button:hover, button:focus {
     color: #6096ba;
     font-size: 2rem;
 }
+
+@media (min-width: 600px) {
+    .plan {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .pricing_plan.weekly img {
+        height: 200px;
+    }
+    .pricing_plan.yearly img {
+        height: 200px;
+    }
+    .pricing_plan.monthly {
+        border-bottom: none;
+    }
+}
+
