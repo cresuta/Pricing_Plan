@@ -1,3 +1,45 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+    color: #8b8c89;
+}
+
+body {
+    background-color: #6096ba;
+    text-align: center;
+}
+
 img {
     width: 300px;
+    min-width: 100%;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+.plan {
+    background-color: #e7ecef;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+}
+
+.pricing_plan {
+    margin: 10px 0px;
+    border-bottom: 1px solid #6096ba;
+    padding: 15px;
+}
+
+.pricing_plan:last-child {
+    margin: 10px 0px;
+    border-bottom: none;
+}
+
+.price {
+    border-bottom: none;
+    color: #6096ba;
+    font-size: 2rem;
 }
